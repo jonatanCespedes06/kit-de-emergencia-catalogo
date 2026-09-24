@@ -1,0 +1,178 @@
+{
+  "marca": "KIT DE EMERGENCIA",
+  "slogan": "Primeros auxilios para cuando tenés la heladera vacía",
+  "whatsapp": "5491148701239",
+  "mensajeWhatsapp": "Hola KIT DE EMERGENCIA! Quiero armar mi kit. ¿Me pasás stock y horarios de entrega?",
+  "moneda": "ARS",
+  "categorias": [
+    {
+      "id": "pizzetas",
+      "nombre": "Pizzetas",
+      "descripcion": "Para el freezer, listas para hornear",
+      "orden": 1,
+      "productos": [
+        {
+          "id": "pizzeta-peq-muzza-x6",
+          "nombre": "Pizzetas pequeñas c/ muzzarella x6",
+          "descripcion": "Base casera con salsa y muzzarella. Directo al horno.",
+          "precio": 5000,
+          "imagen": "images/kit-pizzetas.jpeg",
+          "disponible": true,
+          "destacado": true
+        },
+        {
+          "id": "pizzeta-med-muzza-x4",
+          "nombre": "Pizzetas medianas c/ muzzarella x4",
+          "descripcion": "Más grandes, ideales para una cena rápida.",
+          "precio": 5000,
+          "imagen": "images/pizzetas-medianas-4.jpeg",
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "pizzeta-peq-x12",
+          "nombre": "Pizzetas pequeñas x12",
+          "descripcion": "Pizzeta casera para armar como quieras.",
+          "precio": 5000,
+          "imagen": "images/pizzetas-x-12.jpeg",
+          "disponible": true,
+          "destacado": false,
+          "notaPedido": "Consultanos por precios para pedidos de más de dos docenas."
+        }
+      ]
+    },
+    {
+      "id": "empanadas",
+      "nombre": "Empanadas",
+      "descripcion": "Elaboradas con tapas caseras, para stockear el freezer",
+      "orden": 2,
+      "productos": [
+        {
+          "id": "empanadas-x6",
+          "nombre": "Empanadas x6",
+          "descripcion": "Masa casera y relleno abundante.",
+          "precio": 10000,
+          "imagen": "images/kit-empanadas.jpeg",
+          "disponible": true,
+          "destacado": true,
+          "sabores": ["Carne", "Pollo"]
+        },
+        {
+          "id": "empanadas-x12",
+          "nombre": "Empanadas x12",
+          "descripcion": "La opción rendidora: llenás el freezer y resolvés varias comidas.",
+          "precio": 19000,
+          "imagen": "images/empanadas-docena.jpeg",
+          "disponible": true,
+          "destacado": false,
+          "sabores": ["Carne", "Pollo"]
+        }
+      ]
+    },
+    {
+      "id": "combos",
+      "nombre": "Combos",
+      "descripcion": "Armá tu kit como quieras",
+      "orden": 3,
+      "productos": [
+        {
+          "id": "combo-6emp-6pizz",
+          "nombre": "Combo 6 empanadas + 6 pizzetas chicas",
+          "descripcion": "El kit perfecto para tener soluciones rápidas en el freezer.",
+          "precio": 14000,
+          "imagen": "images/combo-6-emp-6-pizzetas.jpeg",
+          "disponible": true,
+          "destacado": true
+        },
+         {
+          "id": "combo-6emp-6pizz-1salsa",
+          "nombre": "Combo 6 empanadas + 6 pizzetas con muzza + Salsa bolognesa",
+          "descripcion": "El kit completo para probar todo y tener soluciones rápidas en el freezer.",
+          "precio": 18500,
+          "imagen": "images/kit-salsa-pizzeta-empanadas.jpeg",
+          "disponible": true,
+          "destacado": true
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "nombre": "Salsas y wraps",
+      "descripcion": "El toque casero que resuelve todo",
+      "orden": 4,
+      "productos": [
+        {
+          "id": "salsa-bolognesa-250",
+          "nombre": "Salsa bolognesa x 250 grs",
+          "descripcion": "Casera, lista para descongelar y acompañar tus pastas.",
+          "precio": 5000,
+          "imagen": "images/salsas.jpg",
+          "disponible": true,
+          "destacado": false
+        },
+        {
+          "id": "wrap-bondiola-250",
+          "nombre": "Wrap de bondiola",
+          "descripcion": "Relleno de bondiola desmechada con salsa barbacoa y cebolla caramelizada.",
+          "precio": 4500,
+          "imagen": "images/bondio.jpg",
+          "disponible": true,
+          "destacado": false
+        }
+      ]
+    },
+    {
+      "id": "panificados",
+      "nombre": "Panificados y budines",
+      "descripcion": "Casero, como en casa",
+      "orden": 5,
+      "productos": [
+        {
+          "id": "budin-30cm",
+          "nombre": "Budín",
+          "descripcion": "Esponjoso y casero, ideal para la merienda de toda la semana.",
+          "precio": 7500,
+          "imagen": "images/budin.jpeg",
+          "disponible": true,
+          "destacado": false,
+          "sabores": ["Vainilla", "Vainilla con chips de chocolate", "Banana", "Chocolate", "Marmolado"],
+          "porPedido": true,
+          "textoBoton": "Encargar",
+          "anticipacion": "con al menos 1 día de anticipación",
+          "notaPedido": "Asegurate el tuyo con al menos un día de anticipación.",
+          "etiqueta": "A pedido"
+        },
+        {
+          "id": "budin-integral-30cm",
+          "nombre": "Budín integral",
+          "descripcion": "Harina integral, coco rallado, canela, azúcar mascabo y frutos secos.",
+          "precio": 10000,
+          "imagen": "images/budin-integral.jpeg",
+          "disponible": true,
+          "destacado": false,
+          "sabores": [],
+          "porPedido": true,
+          "textoBoton": "Encargar",
+          "anticipacion": "con al menos 1 día de anticipación",
+          "notaPedido": "Asegurate el tuyo con al menos un día de anticipación.",
+          "etiqueta": "A pedido"
+        },
+        {
+          "id": "pan-casero",
+          "nombre": "Pan casero",
+          "descripcion": "Con o sin chicharrón.",
+          "precio": 3500,
+          "imagen": "images/pan-casero.jpeg",
+          "disponible": true,
+          "destacado": false,
+          "porPedido": true,
+          "textoBoton": "Encargar para el viernes",
+          "diaEntrega": "viernes",
+          "anticipacion": "antes del jueves",
+          "notaPedido": "Solo viernes, a pedido. Encargalo antes del jueves por WhatsApp.",
+          "etiqueta": "Solo viernes · A pedido"
+        }
+      ]
+    }
+  ]
+}
