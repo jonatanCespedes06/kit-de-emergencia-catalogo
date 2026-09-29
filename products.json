@@ -13,31 +13,24 @@
       "productos": [
         {
           "id": "pizzeta-peq-muzza-x6",
-          "nombre": "Pizzetas pequeñas c/ muzzarella x6",
+          "nombre": "Pizzetas pequeñas c/muzzarella x6",
           "descripcion": "Base casera con salsa y muzzarella. Directo al horno.",
           "precio": 5000,
           "imagen": "images/kit-pizzetas.jpeg",
           "disponible": true,
-          "destacado": true
-        },
-        {
-          "id": "pizzeta-med-muzza-x4",
-          "nombre": "Pizzetas medianas c/ muzzarella x4",
-          "descripcion": "Más grandes, ideales para una cena rápida.",
-          "precio": 5000,
-          "imagen": "images/pizzetas-medianas-4.jpeg",
-          "disponible": true,
-          "destacado": false
+          "destacado": true,
+          "textoBoton": "Pedir por WhatsApp"
         },
         {
           "id": "pizzeta-peq-x12",
-          "nombre": "Pizzetas pequeñas x12",
+          "nombre": "Pizzetas pequeñas x 12",
           "descripcion": "Pizzeta casera para armar como quieras.",
           "precio": 5000,
           "imagen": "images/pizzetas-x-12.jpeg",
           "disponible": true,
           "destacado": false,
-          "notaPedido": "Consultanos por precios para pedidos de más de dos docenas."
+          "notaPedido": "Consultanos por precios para pedidos de más de dos docenas.",
+          "textoBoton": "Pedir por WhatsApp"
         }
       ]
     },
@@ -48,16 +41,6 @@
       "orden": 2,
       "productos": [
         {
-          "id": "empanadas-x6",
-          "nombre": "Empanadas x6",
-          "descripcion": "Masa casera y relleno abundante.",
-          "precio": 10000,
-          "imagen": "images/kit-empanadas.jpeg",
-          "disponible": true,
-          "destacado": true,
-          "sabores": ["Carne", "Pollo"]
-        },
-        {
           "id": "empanadas-x12",
           "nombre": "Empanadas x12",
           "descripcion": "La opción rendidora: llenás el freezer y resolvés varias comidas.",
@@ -65,7 +48,25 @@
           "imagen": "images/empanadas-docena.jpeg",
           "disponible": true,
           "destacado": false,
-          "sabores": ["Carne", "Pollo"]
+          "sabores": [
+            "Carne",
+            "Pollo"
+          ],
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "empanadas-x6",
+          "nombre": "Empanadas x6",
+          "descripcion": "Masa casera y relleno abundante.",
+          "precio": 10000,
+          "imagen": "images/kit-empanadas.jpeg",
+          "disponible": true,
+          "destacado": true,
+          "sabores": [
+            "Carne",
+            "Pollo"
+          ],
+          "textoBoton": "Pedir por WhatsApp"
         }
       ]
     },
@@ -82,16 +83,28 @@
           "precio": 14000,
           "imagen": "images/combo-6-emp-6-pizzetas.jpeg",
           "disponible": true,
-          "destacado": true
+          "destacado": true,
+          "textoBoton": "Pedir por WhatsApp"
         },
-         {
+        {
           "id": "combo-6emp-6pizz-1salsa",
           "nombre": "Combo 6 empanadas + 6 pizzetas con muzza + Salsa bolognesa",
           "descripcion": "El kit completo para probar todo y tener soluciones rápidas en el freezer.",
           "precio": 18500,
           "imagen": "images/kit-salsa-pizzeta-empanadas.jpeg",
           "disponible": true,
-          "destacado": true
+          "destacado": true,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "combo-pizzeta-chip",
+          "nombre": "Kit Juntada 24 pizzetas + 24 chips",
+          "imagen": "images/kit-juntada.jpeg",
+          "descripcion": "El kit ideal para las juntadas con tus amigos, cumpleaños o simplemente tener stockeado. Pizzetas y pancitos caseros para sandwichs, riquísimos",
+          "precio": 16000,
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
         }
       ]
     },
@@ -108,16 +121,18 @@
           "precio": 5000,
           "imagen": "images/salsas.jpg",
           "disponible": true,
-          "destacado": false
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
         },
         {
           "id": "wrap-bondiola-250",
-          "nombre": "Wrap de bondiola",
+          "nombre": "Wrap bondiola x 250 grs",
           "descripcion": "Relleno de bondiola desmechada con salsa barbacoa y cebolla caramelizada.",
           "precio": 4500,
           "imagen": "images/bondio.jpg",
           "disponible": true,
-          "destacado": false
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
         }
       ]
     },
@@ -128,49 +143,105 @@
       "orden": 5,
       "productos": [
         {
+          "id": "alfajor-chocolate",
+          "nombre": "Alfajor de chocolate",
+          "imagen": "images/alfajor-choco.jpeg",
+          "descripcion": "Tapas de chocolate artesanales, bien rellenos con dulce de leche repostero y bañados en chocolate semi amargo.",
+          "precio": 3000,
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "alfajor-maicena-6",
+          "nombre": "Alfajores de maicena x 6un",
+          "imagen": "images/alfajor-maicena.jpeg",
+          "descripcion": "Elaborados con tapas artesanales, exquisitos.",
+          "precio": 6500,
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
           "id": "budin-30cm",
-          "nombre": "Budín",
+          "nombre": "Budin",
           "descripcion": "Esponjoso y casero, ideal para la merienda de toda la semana.",
           "precio": 7500,
           "imagen": "images/budin.jpeg",
           "disponible": true,
           "destacado": false,
-          "sabores": ["Vainilla", "Vainilla con chips de chocolate", "Banana", "Chocolate", "Marmolado"],
+          "sabores": [
+            "Vainilla",
+            "Vainilla con chips de chocolate",
+            "Banana",
+            "Chocolate",
+            "Marmolado"
+          ],
           "porPedido": true,
-          "textoBoton": "Encargar",
           "anticipacion": "con al menos 1 día de anticipación",
           "notaPedido": "Asegurate el tuyo con al menos un día de anticipación.",
-          "etiqueta": "A pedido"
+          "etiqueta": "A pedido",
+          "textoBoton": "Encargar"
         },
         {
           "id": "budin-integral-30cm",
-          "nombre": "Budín integral",
+          "nombre": "Budin integral",
           "descripcion": "Harina integral, coco rallado, canela, azúcar mascabo y frutos secos.",
           "precio": 10000,
           "imagen": "images/budin-integral.jpeg",
           "disponible": true,
           "destacado": false,
-          "sabores": [],
           "porPedido": true,
-          "textoBoton": "Encargar",
           "anticipacion": "con al menos 1 día de anticipación",
           "notaPedido": "Asegurate el tuyo con al menos un día de anticipación.",
-          "etiqueta": "A pedido"
+          "etiqueta": "A pedido",
+          "textoBoton": "Encargar"
+        },
+        {
+          "id": "chipa-x-12",
+          "nombre": "Chipa x 12 un",
+          "imagen": "images/chipa-docena.jpeg",
+          "descripcion": "Chipa casero congelado listo para hornear y disfrutar.",
+          "precio": 7500,
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
         },
         {
           "id": "pan-casero",
-          "nombre": "Pan casero",
+          "nombre": "Pan",
           "descripcion": "Con o sin chicharrón.",
           "precio": 3500,
           "imagen": "images/pan-casero.jpeg",
           "disponible": true,
           "destacado": false,
           "porPedido": true,
-          "textoBoton": "Encargar para el viernes",
-          "diaEntrega": "viernes",
           "anticipacion": "antes del jueves",
           "notaPedido": "Solo viernes, a pedido. Encargalo antes del jueves por WhatsApp.",
-          "etiqueta": "Solo viernes · A pedido"
+          "etiqueta": "Solo viernes · A pedido",
+          "diaEntrega": "viernes",
+          "textoBoton": "Encargar para el viernes"
+        },
+        {
+          "id": "pan-chip-12",
+          "nombre": "Pan chip x 12",
+          "imagen": "images/pan-chips-12.jpeg",
+          "descripcion": "Pancitos chips caseros, especiales para tener en tu freezer listos para las juntadas.",
+          "precio": 4000,
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "pasta-frola-chica",
+          "nombre": "Pasta frola 12cm",
+          "descripcion": "Pasta frola de dulce de membrillo casera, exquisita.",
+          "precio": 4000,
+          "imagen": "images/pasta-frola-12cm.jpeg",
+          "disponible": true,
+          "destacado": false,
+          "porPedido": true,
+          "textoBoton": "Encargar"
         }
       ]
     }
