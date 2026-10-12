@@ -14,9 +14,9 @@
         {
           "id": "pizzeta-peq-muzza-x6",
           "nombre": "Pizzetas c/muzzarella x6",
-          "descripcion": "Base casera con salsa y muzzarella. Directo al horno.",
+          "descripcion": "Pizzeta con muzzarella. Directo al horno.",
           "precio": 5000,
-          "imagen": "images/kit-pizzetas.jpeg",
+          "imagen": "images/pizzeta-peq-muzza-x6.jpg",
           "disponible": true,
           "destacado": true,
           "textoBoton": "Pedir por WhatsApp"
@@ -115,38 +115,6 @@
       "orden": 4,
       "productos": [
         {
-          "id": "chocotorta",
-          "nombre": "Chocotorta",
-          "descripcion": "Chocotorta",
-          "precio": 13000,
-          "imagen": "images/chocotorta.jpg",
-          "disponible": true,
-          "destacado": false,
-          "porPedido": true,
-          "textoBoton": "Encargar"
-        },
-        {
-          "id": "postre-vainilla",
-          "nombre": "Postre de vainillas y coco",
-          "descripcion": "Exquisito postre de vainillas, coco y crema.",
-          "precio": 14200,
-          "imagen": "images/postre-vainilla.jpg",
-          "disponible": true,
-          "destacado": false,
-          "textoBoton": "Pedir por WhatsApp"
-        },
-        {
-          "id": "torta-oreo",
-          "nombre": "Postre torta Oreo",
-          "descripcion": "Base de galletitas Oreo, crema oreo y dulce de leche.",
-          "precio": 15200,
-          "imagen": "images/torta-oreo.jpg",
-          "disponible": true,
-          "destacado": false,
-          "porPedido": true,
-          "textoBoton": "Encargar"
-        },
-        {
           "id": "salsa-bolognesa-250",
           "nombre": "Salsa bolognesa x 250 grs",
           "descripcion": "Casera, lista para descongelar y acompañar tus pastas.",
@@ -155,17 +123,6 @@
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
-        },
-        {
-          "id": "torta-chocolate",
-          "nombre": "Torta de chocolate",
-          "descripcion": "Una bomba. Bizcochuelo y Ganache de chocolate con Dulce de leche.",
-          "precio": 13000,
-          "imagen": "images/torta-chocolate.jpg",
-          "disponible": true,
-          "destacado": false,
-          "porPedido": true,
-          "textoBoton": "Encargar"
         },
         {
           "id": "wrap-bondiola-250",
@@ -180,10 +137,58 @@
       ]
     },
     {
+      "id": "postres",
+      "nombre": "Postres",
+      "descripcion": "El espacio dulce en tu freezer",
+      "orden": 5,
+      "productos": [
+        {
+          "id": "chocotorta",
+          "nombre": "Chocotorta",
+          "descripcion": "Rinde 4 porciones. Eco bandeja reutilizable.",
+          "precio": 13000,
+          "imagen": "images/chocotorta.jpg",
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "postre-vainilla",
+          "nombre": "Postre de vainillas y coco",
+          "descripcion": "Exquisito postre de vainillas, coco y crema. Rinde 4 porciones. Eco bandeja reutilizable.",
+          "precio": 14200,
+          "imagen": "images/postre-vainilla.jpg",
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "torta-oreo",
+          "nombre": "Postre torta Oreo",
+          "descripcion": "Base de galletitas Oreo, crema oreo y dulce de leche. Para compartir, rinde 4 porciones. Eco bandeja Reutilizable.",
+          "precio": 15200,
+          "imagen": "images/torta-oreo.jpg",
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "torta-chocolate",
+          "nombre": "Torta extra chocolate",
+          "descripcion": "Una bomba. Bizcochuelo y Ganache de chocolate. Rinde 4 porciones. Eco bandeja reutilizable.",
+          "precio": 13000,
+          "imagen": "images/torta-chocolate.jpg",
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        }
+      ]
+    },
+    {
       "id": "panificados",
       "nombre": "Panificados y budines",
       "descripcion": "Casero, como en casa",
-      "orden": 5,
+      "orden": 6,
       "productos": [
         {
           "id": "alfajor-chocolate",
