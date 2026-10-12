@@ -13,7 +13,7 @@
       "productos": [
         {
           "id": "pizzeta-peq-muzza-x6",
-          "nombre": "Pizzetas pequeñas c/muzzarella x6",
+          "nombre": "Pizzetas c/muzzarella x6",
           "descripcion": "Base casera con salsa y muzzarella. Directo al horno.",
           "precio": 5000,
           "imagen": "images/kit-pizzetas.jpeg",
@@ -23,7 +23,7 @@
         },
         {
           "id": "pizzeta-peq-x12",
-          "nombre": "Pizzetas pequeñas x 12",
+          "nombre": "Pizzetas x 12",
           "descripcion": "Pizzeta casera para armar como quieras.",
           "precio": 5000,
           "imagen": "images/pizzetas-x-12.jpeg",
@@ -99,9 +99,9 @@
         {
           "id": "combo-pizzeta-chip",
           "nombre": "Kit Juntada 24 pizzetas + 24 chips",
-          "imagen": "images/kit-juntada.jpeg",
           "descripcion": "El kit ideal para las juntadas con tus amigos, cumpleaños o simplemente tener stockeado. Pizzetas y pancitos caseros para sandwichs, riquísimos",
           "precio": 16000,
+          "imagen": "images/combo-pizzeta-chip.jpg",
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -115,6 +115,38 @@
       "orden": 4,
       "productos": [
         {
+          "id": "chocotorta",
+          "nombre": "Chocotorta",
+          "descripcion": "Chocotorta",
+          "precio": 13000,
+          "imagen": "images/chocotorta.jpg",
+          "disponible": true,
+          "destacado": false,
+          "porPedido": true,
+          "textoBoton": "Encargar"
+        },
+        {
+          "id": "postre-vainilla",
+          "nombre": "Postre de vainillas y coco",
+          "descripcion": "Exquisito postre de vainillas, coco y crema.",
+          "precio": 14200,
+          "imagen": "images/postre-vainilla.jpg",
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "torta-oreo",
+          "nombre": "Postre torta Oreo",
+          "descripcion": "Base de galletitas Oreo, crema oreo y dulce de leche.",
+          "precio": 15200,
+          "imagen": "images/torta-oreo.jpg",
+          "disponible": true,
+          "destacado": false,
+          "porPedido": true,
+          "textoBoton": "Encargar"
+        },
+        {
           "id": "salsa-bolognesa-250",
           "nombre": "Salsa bolognesa x 250 grs",
           "descripcion": "Casera, lista para descongelar y acompañar tus pastas.",
@@ -125,8 +157,19 @@
           "textoBoton": "Pedir por WhatsApp"
         },
         {
+          "id": "torta-chocolate",
+          "nombre": "Torta de chocolate",
+          "descripcion": "Una bomba. Bizcochuelo y Ganache de chocolate con Dulce de leche.",
+          "precio": 13000,
+          "imagen": "images/torta-chocolate.jpg",
+          "disponible": true,
+          "destacado": false,
+          "porPedido": true,
+          "textoBoton": "Encargar"
+        },
+        {
           "id": "wrap-bondiola-250",
-          "nombre": "Wrap bondiola x 250 grs",
+          "nombre": "Wrap bondiola",
           "descripcion": "Relleno de bondiola desmechada con salsa barbacoa y cebolla caramelizada.",
           "precio": 4500,
           "imagen": "images/bondio.jpg",
@@ -145,9 +188,9 @@
         {
           "id": "alfajor-chocolate",
           "nombre": "Alfajor de chocolate",
-          "imagen": "images/alfajor-choco.jpeg",
           "descripcion": "Tapas de chocolate artesanales, bien rellenos con dulce de leche repostero y bañados en chocolate semi amargo.",
           "precio": 3000,
+          "imagen": "images/alfajor-chocolate.jpg",
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -155,9 +198,9 @@
         {
           "id": "alfajor-maicena-6",
           "nombre": "Alfajores de maicena x 6un",
-          "imagen": "images/alfajor-maicena.jpeg",
           "descripcion": "Elaborados con tapas artesanales, exquisitos.",
           "precio": 6500,
+          "imagen": "images/alfajor-maicena-6.jpg",
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -200,9 +243,9 @@
         {
           "id": "chipa-x-12",
           "nombre": "Chipa x 12 un",
-          "imagen": "images/chipa-docena.jpeg",
           "descripcion": "Chipa casero congelado listo para hornear y disfrutar.",
           "precio": 7500,
+          "imagen": "images/chipa-x-12.jpg",
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -225,9 +268,9 @@
         {
           "id": "pan-chip-12",
           "nombre": "Pan chip x 12",
-          "imagen": "images/pan-chips-12.jpeg",
           "descripcion": "Pancitos chips caseros, especiales para tener en tu freezer listos para las juntadas.",
           "precio": 4000,
+          "imagen": "images/pan-chip-12.jpg",
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
