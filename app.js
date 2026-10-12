@@ -123,20 +123,15 @@ async function init() {
     const article = document.createElement('article');
     article.className = 'card' + (esPorPedido ? ' card-special' : '');
 
-    // Imagen con fallback si todavía no existe el archivo
-    if (prod.imagen) {
-      const img = document.createElement('img');
-      img.className = 'card-img';
-      img.loading = 'lazy';
-      img.alt = prod.nombre;
-      img.src = prod.imagen;
-      img.onerror = () => {
-        const fb = document.createElement('div');
-        fb.className = 'card-img-fallback';
-        fb.textContent = initials(prod.nombre);
-        img.replaceWith(fb);
-      };
-      article.appendChild(img);
+    // Imágenes: carrusel si hay varias, foto única si hay una, nada si no hay.
+    // Compat legacy: prod.imagen (string) como fallback defensivo.
+    const imgs = Array.isArray(prod.imagenes) && prod.imagenes.length
+      ? prod.imagenes.filter((x) => typeof x === 'string' && x)
+      : (typeof prod.imagen === 'string' && prod.imagen ? [prod.imagen] : []);
+    if (imgs.length === 1) {
+      article.appendChild(fotoUnica(imgs[0], prod.nombre, () => openLightbox(imgs, prod.nombre, 0)));
+    } else if (imgs.length > 1) {
+      article.appendChild(buildCarousel(imgs, prod.nombre));
     }
 
     const body = document.createElement('div');
@@ -223,6 +218,153 @@ async function init() {
 
   function initials(name) {
     return name.split(' ').slice(0, 2).map((w) => w[0]).join('').toUpperCase();
+  }
+
+  function fallbackFoto(nombre) {
+    const fb = document.createElement('div');
+    fb.className = 'card-img-fallback';
+    fb.textContent = initials(nombre);
+    return fb;
+  }
+
+  function fotoUnica(src, nombre, onClick) {
+    const img = document.createElement('img');
+    img.className = 'card-img card-img-click';
+    img.loading = 'lazy';
+    img.alt = nombre;
+    img.src = src;
+    img.onerror = () => img.replaceWith(fallbackFoto(nombre));
+    if (onClick) img.addEventListener('click', onClick);
+    return img;
+  }
+
+  function buildCarousel(imgs, nombre) {
+    let idx = 0;
+    const box = document.createElement('div');
+    box.className = 'carrousel';
+
+    const view = document.createElement('div');
+    view.className = 'car-view';
+    const img = document.createElement('img');
+    img.className = 'card-img card-img-click';
+    img.loading = 'lazy';
+    img.addEventListener('click', () => openLightbox(imgs, nombre, idx));
+    img.onerror = () => box.replaceWith(fallbackFoto(nombre));
+    view.appendChild(img);
+    box.appendChild(view);
+
+    const prev = document.createElement('button');
+    prev.type = 'button';
+    prev.className = 'car-btn car-prev';
+    prev.textContent = '‹';
+    prev.setAttribute('aria-label', 'Foto anterior de ' + nombre);
+    prev.addEventListener('click', (ev) => { ev.stopPropagation(); ir(idx - 1); });
+
+    const next = document.createElement('button');
+    next.type = 'button';
+    next.className = 'car-btn car-next';
+    next.textContent = '›';
+    next.setAttribute('aria-label', 'Foto siguiente de ' + nombre);
+    next.addEventListener('click', (ev) => { ev.stopPropagation(); ir(idx + 1); });
+
+    box.appendChild(prev);
+    box.appendChild(next);
+
+    const dots = document.createElement('div');
+    dots.className = 'car-dots';
+    const dotBtns = imgs.map((_, i) => {
+      const d = document.createElement('button');
+      d.type = 'button';
+      d.className = 'car-dot';
+      d.setAttribute('aria-label', 'Ver foto ' + (i + 1) + ' de ' + nombre);
+      d.addEventListener('click', (ev) => { ev.stopPropagation(); ir(i); });
+      dots.appendChild(d);
+      return d;
+    });
+
+    const count = document.createElement('span');
+    count.className = 'car-count';
+
+    const foot = document.createElement('div');
+    foot.className = 'car-foot';
+    foot.appendChild(dots);
+    foot.appendChild(count);
+    box.appendChild(foot);
+
+    function ir(i) {
+      idx = (i + imgs.length) % imgs.length;
+      img.src = imgs[idx];
+      img.alt = nombre + ' (' + (idx + 1) + '/' + imgs.length + ')';
+      dotBtns.forEach((d, j) => d.classList.toggle('on', j === idx));
+      count.textContent = (idx + 1) + '/' + imgs.length;
+    }
+    ir(0);
+    return box;
+  }
+
+  function openLightbox(imgs, nombre, startIdx) {
+    let idx = startIdx || 0;
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-label', 'Vista ampliada de ' + nombre);
+
+    const img = document.createElement('img');
+    img.className = 'lb-img';
+
+    const count = document.createElement('span');
+    count.className = 'lb-count';
+
+    function mostrar(i) {
+      idx = (i + imgs.length) % imgs.length;
+      img.src = imgs[idx];
+      img.alt = nombre + ' (' + (idx + 1) + '/' + imgs.length + ')';
+      count.textContent = (idx + 1) + '/' + imgs.length;
+    }
+
+    const prev = document.createElement('button');
+    prev.type = 'button';
+    prev.className = 'lb-btn lb-prev';
+    prev.textContent = '‹';
+    prev.setAttribute('aria-label', 'Foto anterior');
+    prev.addEventListener('click', (ev) => { ev.stopPropagation(); mostrar(idx - 1); });
+
+    const next = document.createElement('button');
+    next.type = 'button';
+    next.className = 'lb-btn lb-next';
+    next.textContent = '›';
+    next.setAttribute('aria-label', 'Foto siguiente');
+    next.addEventListener('click', (ev) => { ev.stopPropagation(); mostrar(idx + 1); });
+
+    const close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'lb-btn lb-close';
+    close.textContent = '×';
+    close.setAttribute('aria-label', 'Cerrar vista ampliada');
+    close.addEventListener('click', () => cerrar());
+
+    overlay.appendChild(img);
+    overlay.appendChild(count);
+    if (imgs.length > 1) {
+      overlay.appendChild(prev);
+      overlay.appendChild(next);
+    }
+    overlay.appendChild(close);
+    overlay.addEventListener('click', (ev) => { if (ev.target === overlay) cerrar(); });
+
+    function onKey(ev) {
+      if (ev.key === 'Escape') cerrar();
+      else if (ev.key === 'ArrowLeft' && imgs.length > 1) mostrar(idx - 1);
+      else if (ev.key === 'ArrowRight' && imgs.length > 1) mostrar(idx + 1);
+    }
+    function cerrar() {
+      document.removeEventListener('keydown', onKey);
+      overlay.remove();
+    }
+    document.addEventListener('keydown', onKey);
+    document.body.appendChild(overlay);
+    mostrar(idx);
+    close.focus();
   }
 
   function wireGeneralLinks(d, waNumber) {
