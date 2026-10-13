@@ -16,7 +16,9 @@
           "nombre": "Pizzetas c/muzzarella x6",
           "descripcion": "Pizzeta con muzzarella. Directo al horno.",
           "precio": 5000,
-          "imagen": "images/pizzeta-peq-muzza-x6.jpg",
+          "imagenes": [
+            "images/pizzeta-peq-muzza-x6.jpg"
+          ],
           "disponible": true,
           "destacado": true,
           "textoBoton": "Pedir por WhatsApp"
@@ -26,7 +28,9 @@
           "nombre": "Pizzetas x 12",
           "descripcion": "Pizzeta casera para armar como quieras.",
           "precio": 5000,
-          "imagen": "images/pizzetas-x-12.jpeg",
+          "imagenes": [
+            "images/pizzetas-x-12.jpeg"
+          ],
           "disponible": true,
           "destacado": false,
           "notaPedido": "Consultanos por precios para pedidos de más de dos docenas.",
@@ -45,7 +49,9 @@
           "nombre": "Empanadas x12",
           "descripcion": "La opción rendidora: llenás el freezer y resolvés varias comidas.",
           "precio": 19000,
-          "imagen": "images/empanadas-docena.jpeg",
+          "imagenes": [
+            "images/empanadas-docena.jpeg"
+          ],
           "disponible": true,
           "destacado": false,
           "sabores": [
@@ -59,7 +65,9 @@
           "nombre": "Empanadas x6",
           "descripcion": "Masa casera y relleno abundante.",
           "precio": 10000,
-          "imagen": "images/kit-empanadas.jpeg",
+          "imagenes": [
+            "images/kit-empanadas.jpeg"
+          ],
           "disponible": true,
           "destacado": true,
           "sabores": [
@@ -81,7 +89,9 @@
           "nombre": "Combo 6 empanadas + 6 pizzetas chicas",
           "descripcion": "El kit perfecto para tener soluciones rápidas en el freezer.",
           "precio": 14000,
-          "imagen": "images/combo-6-emp-6-pizzetas.jpeg",
+          "imagenes": [
+            "images/combo-6-emp-6-pizzetas.jpeg"
+          ],
           "disponible": true,
           "destacado": true,
           "textoBoton": "Pedir por WhatsApp"
@@ -91,7 +101,9 @@
           "nombre": "Combo 6 empanadas + 6 pizzetas con muzza + Salsa bolognesa",
           "descripcion": "El kit completo para probar todo y tener soluciones rápidas en el freezer.",
           "precio": 18500,
-          "imagen": "images/kit-salsa-pizzeta-empanadas.jpeg",
+          "imagenes": [
+            "images/kit-salsa-pizzeta-empanadas.jpeg"
+          ],
           "disponible": true,
           "destacado": true,
           "textoBoton": "Pedir por WhatsApp"
@@ -101,7 +113,9 @@
           "nombre": "Kit Juntada 24 pizzetas + 24 chips",
           "descripcion": "El kit ideal para las juntadas con tus amigos, cumpleaños o simplemente tener stockeado. Pizzetas y pancitos caseros para sandwichs, riquísimos",
           "precio": 16000,
-          "imagen": "images/combo-pizzeta-chip.jpg",
+          "imagenes": [
+            "images/combo-pizzeta-chip.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -119,7 +133,9 @@
           "nombre": "Salsa bolognesa x 250 grs",
           "descripcion": "Casera, lista para descongelar y acompañar tus pastas.",
           "precio": 5000,
-          "imagen": "images/salsas.jpg",
+          "imagenes": [
+            "images/salsas.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -129,7 +145,9 @@
           "nombre": "Wrap bondiola",
           "descripcion": "Relleno de bondiola desmechada con salsa barbacoa y cebolla caramelizada.",
           "precio": 4500,
-          "imagen": "images/bondio.jpg",
+          "imagenes": [
+            "images/bondio.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -147,7 +165,10 @@
           "nombre": "Chocotorta",
           "descripcion": "Rinde 4 porciones. Eco bandeja reutilizable.",
           "precio": 13000,
-          "imagen": "images/chocotorta.jpg",
+          "imagenes": [
+            "images/chocotorta-2.jpg",
+            "images/chocotorta-3.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -157,7 +178,9 @@
           "nombre": "Postre de vainillas y coco",
           "descripcion": "Exquisito postre de vainillas, coco y crema. Rinde 4 porciones. Eco bandeja reutilizable.",
           "precio": 14200,
-          "imagen": "images/postre-vainilla.jpg",
+          "imagenes": [
+            "images/postre-vainilla.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -167,7 +190,9 @@
           "nombre": "Postre torta Oreo",
           "descripcion": "Base de galletitas Oreo, crema oreo y dulce de leche. Para compartir, rinde 4 porciones. Eco bandeja Reutilizable.",
           "precio": 15200,
-          "imagen": "images/torta-oreo.jpg",
+          "imagenes": [
+            "images/torta-oreo.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -177,7 +202,9 @@
           "nombre": "Torta extra chocolate",
           "descripcion": "Una bomba. Bizcochuelo y Ganache de chocolate. Rinde 4 porciones. Eco bandeja reutilizable.",
           "precio": 13000,
-          "imagen": "images/torta-chocolate.jpg",
+          "imagenes": [
+            "images/torta-chocolate.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -195,7 +222,9 @@
           "nombre": "Alfajor de chocolate",
           "descripcion": "Tapas de chocolate artesanales, bien rellenos con dulce de leche repostero y bañados en chocolate semi amargo.",
           "precio": 3000,
-          "imagen": "images/alfajor-chocolate.jpg",
+          "imagenes": [
+            "images/alfajor-chocolate.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -205,7 +234,9 @@
           "nombre": "Alfajores de maicena x 6un",
           "descripcion": "Elaborados con tapas artesanales, exquisitos.",
           "precio": 6500,
-          "imagen": "images/alfajor-maicena-6.jpg",
+          "imagenes": [
+            "images/alfajor-maicena-6.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -215,7 +246,9 @@
           "nombre": "Budin",
           "descripcion": "Esponjoso y casero, ideal para la merienda de toda la semana.",
           "precio": 7500,
-          "imagen": "images/budin.jpeg",
+          "imagenes": [
+            "images/budin.jpeg"
+          ],
           "disponible": true,
           "destacado": false,
           "sabores": [
@@ -236,7 +269,9 @@
           "nombre": "Budin integral",
           "descripcion": "Harina integral, coco rallado, canela, azúcar mascabo y frutos secos.",
           "precio": 10000,
-          "imagen": "images/budin-integral.jpeg",
+          "imagenes": [
+            "images/budin-integral.jpeg"
+          ],
           "disponible": true,
           "destacado": false,
           "porPedido": true,
@@ -250,7 +285,9 @@
           "nombre": "Chipa x 12 un",
           "descripcion": "Chipa casero congelado listo para hornear y disfrutar.",
           "precio": 7500,
-          "imagen": "images/chipa-x-12.jpg",
+          "imagenes": [
+            "images/chipa-x-12.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -260,7 +297,9 @@
           "nombre": "Pan",
           "descripcion": "Con o sin chicharrón.",
           "precio": 3500,
-          "imagen": "images/pan-casero.jpeg",
+          "imagenes": [
+            "images/pan-casero.jpeg"
+          ],
           "disponible": true,
           "destacado": false,
           "porPedido": true,
@@ -275,7 +314,9 @@
           "nombre": "Pan chip x 12",
           "descripcion": "Pancitos chips caseros, especiales para tener en tu freezer listos para las juntadas.",
           "precio": 4000,
-          "imagen": "images/pan-chip-12.jpg",
+          "imagenes": [
+            "images/pan-chip-12.jpg"
+          ],
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
@@ -285,7 +326,9 @@
           "nombre": "Pasta frola 12cm",
           "descripcion": "Pasta frola de dulce de membrillo casera, exquisita.",
           "precio": 4000,
-          "imagen": "images/pasta-frola-12cm.jpeg",
+          "imagenes": [
+            "images/pasta-frola-12cm.jpeg"
+          ],
           "disponible": true,
           "destacado": false,
           "porPedido": true,
