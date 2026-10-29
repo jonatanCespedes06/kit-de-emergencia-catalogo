@@ -6,6 +6,50 @@
   "moneda": "ARS",
   "categorias": [
     {
+      "id": "tartas",
+      "nombre": "Tartas",
+      "descripcion": "Variedad de rellenos",
+      "orden": 0,
+      "productos": [
+        {
+          "id": "tarta-de-choclo",
+          "nombre": "Tarta de choclo",
+          "precio": 3500,
+          "imagenes": [
+            "images/tarta-de-choclo.jpg",
+            "images/tarta-de-choclo-2.jpg"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "tarta-de-jamon-y-queso",
+          "nombre": "Tarta de Jamón y Queso",
+          "descripcion": "Rellenas de jamón, queso y huevo.",
+          "precio": 4500,
+          "imagenes": [
+            "images/tarta-de-jamon-y-queso.jpg"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "tarta-de-zapallitos",
+          "nombre": "Tarta de zapallitos",
+          "descripcion": "Rellena de zapallitos",
+          "precio": 3500,
+          "imagenes": [
+            "images/tarta-de-zapallitos.jpg"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        }
+      ]
+    },
+    {
       "id": "pizzetas",
       "nombre": "Pizzetas",
       "descripcion": "Para el freezer, listas para hornear",
@@ -281,18 +325,6 @@
           "textoBoton": "Encargar"
         },
         {
-          "id": "chipa-x-12",
-          "nombre": "Chipa x 12 un",
-          "descripcion": "Chipa casero congelado listo para hornear y disfrutar.",
-          "precio": 7500,
-          "imagenes": [
-            "images/chipa-x-12.jpg"
-          ],
-          "disponible": true,
-          "destacado": false,
-          "textoBoton": "Pedir por WhatsApp"
-        },
-        {
           "id": "pan-casero",
           "nombre": "Pan",
           "descripcion": "Con o sin chicharrón.",
@@ -320,6 +352,19 @@
           "disponible": true,
           "destacado": false,
           "textoBoton": "Pedir por WhatsApp"
+        },
+        {
+          "id": "pan-integral",
+          "nombre": "Pan integral",
+          "descripcion": "Pan integral",
+          "precio": 6000,
+          "imagenes": [
+            "images/pan-integral.jpg"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "porPedido": true,
+          "textoBoton": "Encargar"
         },
         {
           "id": "pasta-frola-chica",
