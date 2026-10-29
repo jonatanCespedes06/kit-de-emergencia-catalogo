@@ -13,7 +13,8 @@
       "productos": [
         {
           "id": "tarta-de-choclo",
-          "nombre": "Tarta de choclo",
+          "nombre": "Tarta individual de choclo",
+          "descripcion": "Tarta individual, molde de 12cm. Rellena de choclo en grano, cremoso y queso.",
           "precio": 3500,
           "imagenes": [
             "images/tarta-de-choclo.jpg",
@@ -25,8 +26,8 @@
         },
         {
           "id": "tarta-de-jamon-y-queso",
-          "nombre": "Tarta de Jamón y Queso",
-          "descripcion": "Rellenas de jamón, queso y huevo.",
+          "nombre": "Tarta individual de Jamón y Queso",
+          "descripcion": "Tarta individual, molde de 12cm. Rellenas de jamón, queso y huevo.",
           "precio": 4500,
           "imagenes": [
             "images/tarta-de-jamon-y-queso.jpg"
@@ -37,8 +38,8 @@
         },
         {
           "id": "tarta-de-zapallitos",
-          "nombre": "Tarta de zapallitos",
-          "descripcion": "Rellena de zapallitos",
+          "nombre": "Tarta individual de zapallitos",
+          "descripcion": "Tarta individual, molde de 12cm. Rellena de zapallitos verdes, huevo y queso.",
           "precio": 3500,
           "imagenes": [
             "images/tarta-de-zapallitos.jpg"
