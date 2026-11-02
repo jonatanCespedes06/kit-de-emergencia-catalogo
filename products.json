@@ -60,7 +60,7 @@
           "id": "pizzeta-peq-muzza-x6",
           "nombre": "Pizzetas c/muzzarella x6",
           "descripcion": "Pizzeta con muzzarella. Directo al horno.",
-          "precio": 5000,
+          "precio": 5500,
           "imagenes": [
             "images/pizzeta-peq-muzza-x6.jpg"
           ],
@@ -93,7 +93,7 @@
           "id": "empanadas-x12",
           "nombre": "Empanadas x12",
           "descripcion": "La opción rendidora: llenás el freezer y resolvés varias comidas.",
-          "precio": 19000,
+          "precio": 20000,
           "imagenes": [
             "images/empanadas-docena.jpeg"
           ],
@@ -130,10 +130,24 @@
       "orden": 3,
       "productos": [
         {
+          "id": "6-empanadas-6-pizzetas-con-muzza-bolognesa-2-mini-",
+          "nombre": "6 Empanadas + 6  Pizzetas con Muzza + Bolognesa + 2 Mini tartas de verduras",
+          "descripcion": "Combo para comer variado.",
+          "precio": 25500,
+          "imagenes": [
+            "images/6-empanadas-6-pizzetas-con-muzza-bolognesa-2-mini-.jpg",
+            "images/6-empanadas-6-pizzetas-con-muzza-bolognesa-2-mini--2.jpg",
+            "images/6-empanadas-6-pizzetas-con-muzza-bolognesa-2-mini--3.jpg"
+          ],
+          "disponible": true,
+          "destacado": false,
+          "textoBoton": "Pedir por WhatsApp"
+        },
+        {
           "id": "combo-6emp-6pizz",
-          "nombre": "Combo 6 empanadas + 6 pizzetas chicas",
+          "nombre": "Combo 6 empanadas + 6 pizzetas",
           "descripcion": "El kit perfecto para tener soluciones rápidas en el freezer.",
-          "precio": 14000,
+          "precio": 14500,
           "imagenes": [
             "images/combo-6-emp-6-pizzetas.jpeg"
           ],
@@ -145,7 +159,7 @@
           "id": "combo-6emp-6pizz-1salsa",
           "nombre": "Combo 6 empanadas + 6 pizzetas con muzza + Salsa bolognesa",
           "descripcion": "El kit completo para probar todo y tener soluciones rápidas en el freezer.",
-          "precio": 18500,
+          "precio": 19000,
           "imagenes": [
             "images/kit-salsa-pizzeta-empanadas.jpeg"
           ],
